@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NodeCRUD - <%- title %></title>
+    <%- include('partials/scripts.ejs') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container py-4">
+        <form action="/create" method="POST" style="width: 50%; margin: 0 auto;">
+            <h2 class="font-weight-bold">Create</h2>
+            <hr>
+            <div class="form-group row">
+              <label for="firstname" class="col-4 col-form-label">First name</label> 
+              <div class="col-8">
+                <input id="firstname" name="firstname" placeholder="ex: John" type="text" class="form-control" required="required" minlength="3" maxlength="50">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastname" class="col-4 col-form-label">Last name</label> 
+              <div class="col-8">
+                <input id="lastname" name="lastname" placeholder="ex: Doe" type="text" class="form-control" required="required" minlength="3" maxlength="50">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="address" class="col-4 col-form-label">Address</label> 
+              <div class="col-8">
+                <input id="address" name="address" placeholder="ex: Nulla St. Mankato Mississippi 96522" type="text" class="form-control"  required="required" minlength="3" maxlength="50">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="position" class="col-4 col-form-label">Position</label> 
+              <div class="col-8">
+                <input id="position" name="position" placeholder="ex: Fullstack Developer" type="text" class="form-control" required="required" minlength="3" maxlength="50">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="salary" class="col-4 col-form-label">Salary</label> 
+              <div class="col-8">
+                <input id="salary" name="salary" placeholder="ex: 10000" type="text" class="form-control" required="required" minlength="3" maxlength="10">
+              </div>
+            </div> 
+            <div class="form-group row">
+              <div class="col-12 text-right">
+                <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
+          </form>
+          <% if (success) {%>
+            <div class="alert alert-success" role="alert" style="width: 50%; margin: 0 auto;">
+              Person added successfully!
+            </div>
+          <% }%>
+          <% if (err) {%>
+            <div class="alert alert-danger" role="alert" style="width: 50%; margin: 0 auto;">
+              <% (err) %>
+            </div>
+          <% }%>
+    </div>
+</body>
+</html>

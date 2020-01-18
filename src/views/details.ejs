@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NodeCRUD - <%- title %></title>
+    <%- include('partials/scripts.ejs') %>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+    <div class="container py-4">
+        <h2 class="font-weight-bold">Details</h2>
+        <hr>
+        <h4><span class="font-weight-bold font-italic">First name:</span> <%- person[0].first_name %></h4>
+        <h4><span class="font-weight-bold font-italic">Last name:</span> <%- person[0].last_name %></h4>
+        <h4><span class="font-weight-bold font-italic">Address:</span> <%- person[0].address %></h4>
+        <h4><span class="font-weight-bold font-italic">Position:</span> <%- person[0].position %></h4>
+        <h4><span class="font-weight-bold font-italic">Salary:</span> <%- person[0].salary %></h4>
+        <hr>
+        <a href="/list" class="btn btn-success">Go back</a>
+    </div>
+</body>
+</html>
