@@ -1,6 +1,6 @@
 # NODEJS + MYSQL CRUD
 
-This is a CRUD made with NodeJS and MySQL
+This is a CRUD made with NodeJS and MySQL.
 
 ## Instructions & configurations  needed
 - Run npm i command.
@@ -16,7 +16,7 @@ CREATE TABLE TABLE_NAME(
     salary VARCHAR(50) NOT NULL
 )
 ```
-PD: If you want to make changes in the sql code above, make sure to change the forms parameters inside src/views as well
+PD: If you want to make changes in the sql code above, make sure to change the forms parameters inside src/views as well.
 
 ## Author
 
