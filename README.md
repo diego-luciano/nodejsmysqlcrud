@@ -2,10 +2,10 @@
 
 This is a CRUD made with NodeJS and MySQL
 
-## Configurations & Instructions needed
+## Instructions & configurations  needed
 - Run npm i command.
 - Edit src/credentials.js file with your own configurations.
-- Create a TABLE in your DATABASE with the next parameters:
+- Create a table in your database with the next parameters:
 ```
 CREATE TABLE TABLE_NAME(
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -18,6 +18,6 @@ CREATE TABLE TABLE_NAME(
 ```
 PD: If you want to make changes in the sql code above, make sure to change the forms parameters inside src/views as well
 
-## Authors
+## Author
 
 * **Diego Luciano** - [diego-luciano](https://github.com/diego-luciano)
